@@ -7,5 +7,5 @@ This project runs analysis on an audio statistics dataset to understand the musi
 
 <h2 align="center"> Code </h2>
 
-- **XX.ipynb** <br>
-description here.
+- [**Audio_Summary_Visualized.ipynb**](https://github.com/hina0830g/Spotify-Top-Charts-Analysis/blob/main/Audio_Summary_Visualized.ipynb) <br>
+Reads the Kaggle dateset, cleans the data, and creates a new dataset (pandas dataframe). Lastly, it uses seaborn to create a 4-panel plot displaying the statistics of 4 parameters: tempo, duration, key, and genre.
