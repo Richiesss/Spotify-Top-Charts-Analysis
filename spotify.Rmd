@@ -1,0 +1,39 @@
+---
+title: "spotify analysis project"
+output: html_document
+date: "2023-03-28"
+---
+```{r data, include=TRUE}
+file<-read.csv("Top_Hits_2000_2019.csv") # Read the original dataset
+summary(file['duration..min.'])
+summary(file['tempo..bpm.'])
+```
+Create box plots of duration & tempo here
+```{r}
+par(mfrow=c(1,2))    # Plot 2 graphs side by side
+boxplot(file['duration..min.'], main=c('Duration'))
+boxplot(file['tempo..bpm.'], main=c('Tempo'))
+```
+
+
+
+Run linear regression on the parameters
+```{r}
+file_mean <- read.csv('Top_Hits_Yearly.csv')
+
+par(mfrow=c(1,2))    # Plot 2 graphs side by side
+lm_fit <- lm(mean_duration_min ~ year, data = file_mean)
+lm_summary <- summary(lm_fit)
+lm_coef1 <- lm_summary$coefficients
+plot(mean_duration_min ~ year, data = file_mean)
+abline(lm_fit)
+
+lm_fit <- lm(mean_tempo_bpm ~ year, data = file_mean)
+lm_summary <- summary(lm_fit)
+lm_coef2 <- lm_summary$coefficients
+plot(mean_tempo_bpm ~ year, data = file_mean)
+abline(lm_fit)
+lm_coef1 # coefficients for duration
+lm_coef2 # coefficients for tempo
+```
+
