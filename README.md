@@ -26,7 +26,7 @@ Common Tempo : **97.92 & 125.20 BPM** (bimodal distribution :two:) <br>
 Common Keys: **C#, B, C** <br>
 Common Genres: **Pop, Hip Hop, Rock** <br>
 
-On average, the mean tempo *increased* 📈 (weak positive correlation) & the mean duration* decreased* 📉 (strong positive correlation) among popular songs in 2000-2019. We postulate that increaed tendency in shorter songs could be potentially due to people's decreased attention span.
+On average, the mean tempo *increased* 📈 (weak positive correlation) & the mean duration *decreased* 📉 (strong positive correlation) among popular songs in 2000-2019. We postulate that increaed tendency in shorter songs could be potentially due to people's decreased attention span.
 <h3> Predictive Models </h3>
 
 **T(t) = 0.313y - 508**, where t = year & T = tempo in BPM  <br>
