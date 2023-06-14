@@ -11,3 +11,6 @@ This project runs analysis on an audio statistics dataset to understand the musi
 Reads the Kaggle dataset, cleans the data, and creates a new dataset (pandas dataframe). Lastly, it uses seaborn to create a 4-panel plot displaying the statistics of 4 parameters: tempo, duration, key, and genre.
 - [**Time_Series_Analysis.ipynb**](https://github.com/hina0830g/Spotify-Top-Charts-Analysis/blob/main/Time_Series_Analysis.ipynb) <br>
 Uses the [dataset](https://github.com/hina0830g/Spotify-Top-Charts-Analysis/blob/main/Top_Hits_2000_2019) created by Audio_Summary_Visualized.ipynb and calculates the mean tempo and duration and how many times each genre and key has appeared each year (2000~2019). 
+
+- [**spotify.Rmd**](https://github.com/hina0830g/Spotify-Top-Charts-Analysis/blob/main/spotify.pdf) <br>
+Shows five number summary, linear regression on duration & tempo. 
